@@ -132,7 +132,7 @@ const About = () => {
           variants={fadeIn('right', 0.4)}
           initial="hidden"
           animate="show"
-          exit="hidden" className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>Hey there, I'm Kunal. I've been into web development for six years, freelancing for over two years as a full-stack developer. I've worked remotely with agencies, advised startups, and contributed to various digital projects.</motion.p>
+          exit="hidden" className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>Hey there, I&#39;m Kunal. I&#39;ve been into web development for six years, freelancing for over two years as a full-stack developer. I&#39;ve worked remotely with agencies, advised startups, and contributed to various digital projects.</motion.p>
           <motion.div 
           variants={fadeIn('right', 0.6)}
           initial="hidden"
