@@ -28,13 +28,13 @@ const Home = () => {
           <motion.div variants={fadeIn('down', 0.4)} initial="hidden"
             animate="show"
             exit='hidden'
-            className="hidden xl:flex">
+            className="hidden xl:flex z-10">
             <ProjectsBtn />
           </motion.div>
         </div>
       </div>
 
-      <div className=" hidden lg:block w-[1200px] h-full absolute right-0 bottom-0"
+      <div className="  w-[1200px] h-full absolute right-0 bottom-0"
       >
   <div
     className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right
