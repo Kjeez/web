@@ -157,6 +157,7 @@ const ProjectCard = ({ name, description, tags, image, source_code_link, web_cod
 const WorkSlider = () => {
   return (
     <Swiper
+    rebuildOnUpdate={false}
       spaceBetween={10}
       pagination={{
         clickable: true,

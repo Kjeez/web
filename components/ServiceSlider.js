@@ -44,7 +44,9 @@ import Link from "next/link";
 
 const ServiceSlider = () => {
   return (
-    <Swiper breakpoints={{
+    <Swiper
+     rebuildOnUpdate={false}
+     breakpoints={{
       320: {
         slidesPerView: 1,
         spaceBetween: 15
