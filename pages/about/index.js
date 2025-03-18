@@ -105,7 +105,7 @@ const About = () => {
   return (
     <div className='h-full bg-primary/30 py-32 text-center xl:text-left'>
       <Circles  />
-      <motion.div variants={fadeIn('right', 0.2)}
+      <motion.div variants={fadeIn('right', 0.1)}
         initial="hidden"
         animate="show"
         exit="hidden"
@@ -120,40 +120,41 @@ const About = () => {
       className="translate-z-0 w-full h-full"/>
     </div> 
       </motion.div>
+      
       <div className='container mx-auto h-full flex flex-col items-center xl:flex-row
       gap-x-6'>
         <div className='flex-1 flex flex-col justify-center'>
           <motion.h2
-          variants={fadeIn('right', 0.2)}
+          variants={fadeIn('right', 0.1)}
           initial="hidden"
           animate="show"
           exit="hidden" className='h2'>Captivating <span className='text_gradBlue'>stories</span> birth magnificent designs.</motion.h2>
           <motion.p 
-          variants={fadeIn('right', 0.4)}
+          variants={fadeIn('right', 0.15)}
           initial="hidden"
           animate="show"
           exit="hidden" className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>Hey there, I&#39;m Kunal. I&#39;ve been into web development for six years, freelancing for over two years as a full-stack developer. I&#39;ve worked remotely with agencies, advised startups, and contributed to various digital projects.</motion.p>
           <motion.div 
-          variants={fadeIn('right', 0.6)}
+          variants={fadeIn('right', 0.2)}
           initial="hidden"
           animate="show"
           exit="hidden" className='hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8'>
             <div className='flex flex-1 xl:gap-x-6'>
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={2} duration={2}/> +
+                  <CountUp start={0} end={5} duration={2}/> +
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Years of experience</div>
               </div>
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={50} duration={5}/> +
+                  <CountUp start={0} end={100} duration={3}/> +
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Finished projects</div>
               </div>
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={50} duration={5}/> +
+                  <CountUp start={0} end={100} duration={3}/> +
                 </div>
                 <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Satisfied Clients</div>
               </div>
@@ -161,7 +162,7 @@ const About = () => {
           </motion.div>
         </div>
         <motion.div 
-        variants={fadeIn('left', 0.4)}
+        variants={fadeIn('left', 0.2)}
         initial="hidden"
         animate="show"
         exit="hidden"className='flex flex-col w-full xl:max-w-[48%] h-[480px] xl:h-[480px]'>
@@ -200,6 +201,7 @@ const About = () => {
         </motion.div> 
       </div>
     </div>
+    
   )
 }
 

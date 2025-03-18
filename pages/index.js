@@ -43,11 +43,11 @@ const Home = () => {
   ></div>
   <div><ParticlesContainer /></div>
   <motion.div
-    variants={fadeIn('up', 0.5)}
+    variants={fadeIn('up', 0.2)}
     initial="hidden"
     animate="show"
     exit="hidden"
-    transition={{ duration: 1, ease: 'easeInOut' }}
+    transition={{ duration: 0.2, ease: 'easeOut' }}
     className="w-full h-full max-w-[636px] max-h-[580px] absolute -bottom-32 lg:bottom-0 lg:right-[5%]"
   >
     <Avatar />

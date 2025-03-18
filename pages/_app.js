@@ -13,11 +13,11 @@ function MyApp({ Component, pageProps }) {
   return (
     <Layout>
       <AnimatePresence mode='wait'>
-        <motion.div key={router.route} className='h-full'>
-          <Transition/>
+        <div key={router.route} className='h-full'>
+          {/* <Transition/> */}
           <Component {...pageProps} />
           <ToastContainer/>
-        </motion.div>
+        </div>
       </AnimatePresence>
     </Layout>
   )
