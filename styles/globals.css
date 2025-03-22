@@ -20,10 +20,10 @@
 
 @layer base {
   body {
-    @apply bg-secondary leading-relaxed overflow-hidden;
+    @apply bg-secondary leading-relaxed overflow-y-auto overflow-x-hidden;
   }
   .page {
-    @apply w-full h-screen overflow-hidden;
+    @apply w-full h-screen overflow-auto {/*overflow-x-hidden*/};
   }
   .h1 {
     @apply text-[35px] leading-tight md:text-[60px] md:leading-[1.3] mb-8 font-semibold;
@@ -111,4 +111,44 @@ background: linear-gradient(to right, #F85032 0%, #F16F5C 50%, #F6290C 51%, #F02
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.chooseBrand {
+  width: 100%;
+  display: flex;
+  gap: 24px; /* Consistent spacing */
+  overflow-x: auto;
+  padding: 40px 24px; /* Adjusted padding */
+  background-color: #1f2937; /* Matches bg-gray-900 */
+  scroll-behavior: smooth; /* Smooth scrolling */
+  user-select: none; /* Prevents text selection during drag */
+  cursor: grab; /* Visual feedback for draggable area */
+}
+
+.chooseBrand::-webkit-scrollbar {
+  height: 4px; /* Thin scrollbar */
+  background-color: transparent; /* Subtle */
+}
+
+.chooseBrand::-webkit-scrollbar-thumb {
+  background-color: #4b5563; /* Gray-600 for visibility */
+  border-radius: 4px;
+}
+
+.chooseBrand:active {
+  cursor: grabbing; /* Cursor change when dragging */
+}
+
+.brandVideo {
+  width: 800px; /* Fixed width */
+  height: 440px; /* Fixed height */
+  border-radius: 8px; /* Softer corners */
+  overflow: hidden;
+  flex-shrink: 0; /* Prevents shrinking */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Matches shadow-lg */
+}
+
+.brandVideo video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures video fills container */
 }
