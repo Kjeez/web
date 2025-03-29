@@ -5,6 +5,7 @@ import ProjectsBtn from '../components/ProjectsBtn';
 import Avatar from '../components/Avatar';
 import { motion } from "framer-motion";
 import { fadeIn } from '../variants'
+import Image from "next/image";
 
 const Home = () => {
   return (
@@ -22,37 +23,43 @@ const Home = () => {
             variants={fadeIn('down', 0.3)} initial="hidden"
             animate="show"
             exit='hidden' className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 ">Masterfully Developing Websites to Turn Your Business Goals and Creative Dreams Into Reality.</motion.p>
-          <div className="flex justify-center xl:hidden relative">
+          <div className="flex flex-col justify-center items-center xl:hidden relative">
             <ProjectsBtn />
+            <a className=' text-center pt-8' href="https://www.refrens.com/free-accounting-software" target="_blank" rel="noopener noreferrer">
+              <img href="https://www.refrens.com/free-accounting-software" src={'/img_3373.png'} alt="referens" className="translate-z-0 w-[150px] h-[50px]" />
+            </a>
           </div>
           <motion.div variants={fadeIn('down', 0.4)} initial="hidden"
             animate="show"
             exit='hidden'
             className="hidden xl:flex z-10">
             <ProjectsBtn />
+            <a className=' pt-14 px-10' href="https://www.refrens.com/free-accounting-software" target="_blank" rel="noopener noreferrer">
+              <img href="https://www.refrens.com/free-accounting-software" src={'/img_3373.png'} alt="referens" className="translate-z-0 w-[250px] h-[100px]" />
+            </a>
           </motion.div>
         </div>
       </div>
 
       <div className="  w-[1200px] h-full absolute right-0 bottom-0"
       >
-  <div
-    className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right
+        <div
+          className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right
     xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"
-     // Add this line to move the background behind everything else
-  ></div>
-  <div><ParticlesContainer /></div>
-  <motion.div
-    variants={fadeIn('up', 0.5)}
-    initial="hidden"
-    animate="show"
-    exit="hidden"
-    transition={{ duration: 1, ease: 'easeInOut' }}
-    className="w-full h-full max-w-[636px] max-h-[580px] absolute -bottom-32 lg:bottom-0 lg:right-[5%]"
-  >
-    <Avatar />
-  </motion.div>
-</div>
+        // Add this line to move the background behind everything else
+        ></div>
+        <div><ParticlesContainer /></div>
+        <motion.div
+          variants={fadeIn('up', 0.5)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          transition={{ duration: 1, ease: 'easeInOut' }}
+          className="w-full h-full max-w-[636px] max-h-[580px] absolute -bottom-32 lg:bottom-0 lg:right-[5%]"
+        >
+          <Avatar />
+        </motion.div>
+      </div>
 
     </div>
   )
